@@ -1,0 +1,41 @@
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-button {
+  border: 1px solid black;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-toggle-button {  
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 4px;
+  display: none;
+  z-index: 2;
+}
+
+.menu-container {  
+  width: 100x;
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: -102px;
+}
+
+canvas {
+  position: relative;
+  z-index: 1;
+}
+
+.graph-container {
+  width: min-content;
+}
