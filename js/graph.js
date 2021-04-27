@@ -2,6 +2,7 @@ const gridSize = 30;
 
 class Graph {
   constructor(_xDim = 10, _yDim = 10, _xPos = 0, _yPos = 0, _name = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)) {
+    console.log("Creating Graph")
     this.box = document.createElement("div");
     this.canv = document.createElement("canvas");
     this.ctx = this.canv.getContext("2d");

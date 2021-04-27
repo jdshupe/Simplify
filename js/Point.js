@@ -10,6 +10,7 @@ class Point extends dataHolders {
     );
     
     this.style();   
+    this.box.classList.add("point");
   }
   
   // get and set methods

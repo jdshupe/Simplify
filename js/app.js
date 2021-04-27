@@ -4,6 +4,7 @@ $(document).ready(function () {
   
   // hide point and add to graph
   $("body").on("mouseup", ".point", function () { 
+    console.log("Point over Graph")
     var position = $(this).position();
     var top = position.top;
     var left = position.left;
@@ -16,6 +17,7 @@ $(document).ready(function () {
         var graphHeight = element.object.yDim;
         
         if ((graphTop < top && top < (graphTop + graphHeight)) && (graphLeft < left && (left < graphLeft + graphWidth))) {
+          console.log("Check 2")
           $(this).hide();
           let item = items.visible.filter(obj => {
             return obj.name == $(this).attr('id');
